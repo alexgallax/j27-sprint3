@@ -20,8 +20,7 @@ public class TrianglePerimeterTests {
     @Parameter(3)
     public int expectedResult;
 
-    @Parameters(name = "Тест {index}: треугольник со сторонами" +
-            " {0}, {1}, {2} должен иметь периметр {3}")
+    @Parameters(name = "Тест {index}: треугольник со сторонами {0}, {1}, {2} должен иметь периметр {3}")
     public static Object[][] data() {
         return new Object[][] {
                 { 2, 4, 8, 14 },
@@ -33,7 +32,6 @@ public class TrianglePerimeterTests {
     public void perimeterTest() {
         Triangle triangle = new Triangle(side1, side2, side3);
 
-        assertEquals("Периметр треугольника вычислен неверно",
-                expectedResult, triangle.perimeter());
+        assertEquals("Периметр треугольника вычислен неверно", expectedResult, triangle.perimeter());
     }
 }

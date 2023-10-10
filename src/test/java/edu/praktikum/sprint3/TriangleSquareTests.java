@@ -10,7 +10,6 @@ public class TriangleSquareTests {
     public void squareTest() {
         Triangle triangle = new Triangle(2, 3, 4);
 
-        assertEquals("Площадь треугольника вычислен неверно",
-                3, triangle.square());
+        assertEquals("Площадь треугольника вычислен неверно", 3, triangle.square());
     }
 }
